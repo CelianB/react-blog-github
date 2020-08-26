@@ -10,6 +10,7 @@ const ButtonContainer = styled.div`
   display: ${enableOAuth ? 'block' : 'none'};
   position: ${({ absolute }) => absolute ? 'absolute' : 'initial'};
   top: 10px;
+  color : rgb(55, 71, 79);
   right: 10px;
 `
 const Button = styled.button`
@@ -30,7 +31,7 @@ const Button = styled.button`
 `
 
 const Text = styled.span`
-  color: #FFF;
+  color: rgb(55, 71, 79);
   font-size: 18px;
 `
 
@@ -46,10 +47,10 @@ export const GithubLogin = ({ isAbsolute }) => {
       {!isLoggedIn
        ? (
           <Button onClick={callOAuth}>
-            <FontAwesomeIcon icon={faGithub} /> Log in
+            <FontAwesomeIcon icon={faGithub} /> Se connecter
           </Button>
          )
-       : <Text>Logged in as {localStorage.getItem('githubUsername')}</Text>
+       : <Text>Connecté en tant que {localStorage.getItem('githubUsername')}</Text>
       }
     </ButtonContainer>
   )

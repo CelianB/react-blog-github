@@ -18,7 +18,7 @@ export const Comment = ({comment}) => {
         />
         <div>
           <AuthorName>{comment.author.login}</AuthorName>
-          <PostDate>{moment(comment.updatedAt).format("DD MMM YYYY")}</PostDate>
+          <PostDate>{moment(comment.updatedAt).format("DD/MM/YYYY")}</PostDate>
         </div>
       </AuthorDetails>
 
