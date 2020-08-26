@@ -24,7 +24,7 @@ const Application = () => {
   return (
     <>
       <Helmet>
-          <title>{config.title}</title>
+          <title>{config.title} - Blog</title>
           <meta charSet="utf-8" />
           <meta name="description" content={config.subtitle} />
           <meta name="theme-color" content={config.header.backgroundColor} />

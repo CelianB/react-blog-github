@@ -10,5 +10,5 @@ const ReadingTime = styled.p`
 `
 
 export const CardReadingTime = ({ time }) => (
-  <ReadingTime>{time} Min Read</ReadingTime>
+  <ReadingTime>{time} Minutes</ReadingTime>
 )

@@ -167,7 +167,7 @@ export default function BlogHome() {
     <>
       {post.title && (
         <PostContainer>
-          <BackButton onClick={() => onBackClick()}>Back</BackButton>
+          <BackButton onClick={() => onBackClick()}>Retour</BackButton>
 
           <PostTitle>{post.title}</PostTitle>
           <div>
@@ -176,9 +176,9 @@ export default function BlogHome() {
               <div>
                 <AuthorName>{post.author.login}</AuthorName>
                 <PostDate>
-                  {moment(post.updatedAt).format("DD MMM YYYY")} .{readingTime(post.body).minutes} Min Read .
+                  {moment(post.updatedAt).format("DD/MM/YYYY")} - {readingTime(post.body).minutes} minutes . 
                   <PostDateLink href={post.url} target="_black">
-                    View On Github
+                    Voir sur Github
                   </PostDateLink>
                 </PostDate>
               </div>

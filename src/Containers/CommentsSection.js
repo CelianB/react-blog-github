@@ -11,7 +11,7 @@ const CommentsSection = ({postUrl, comments}) => {
     <>
       <CommentLinkContainer>
         <CommentLink href={postUrl + "#issue-comment-box"} target="_blank">
-          Post a comment
+          Poster un commentaire
         </CommentLink>
       </CommentLinkContainer>
       {comments.map((v, id) => (

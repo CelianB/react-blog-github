@@ -14,7 +14,7 @@ export const Header = () => {
         <HeaderContainer>
             <GithubLogin isAbsolute={true} />
             <HeaderWrapper>
-                <HeaderTitle>{config.title}</HeaderTitle>
+                <HeaderTitle> {config.title}</HeaderTitle>
                 <HeaderSubtitle>{config.subtitle}</HeaderSubtitle>
             </HeaderWrapper>
         </HeaderContainer>

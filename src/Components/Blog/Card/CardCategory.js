@@ -9,7 +9,7 @@ const StyledCategory = styled.div`
   font-size: 12px;
   text-transform: uppercase;
   color: ${ props => props.theme.body };
-  font-weight: 300;
+  font-weight: bold;
   line-height: 28px;
   font-family: "Quicksand";
   margin-right: 10px;
